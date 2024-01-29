@@ -1,0 +1,39 @@
+.category-item {
+  display: flex;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.item-info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: #161823;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.check {
+  margin-left: 15px;
+  font-size: 2.3rem;
+  color: #20d5ec;
+}
+
+.name {
+  font-size: 2rem;
+  opacity: #161823bf;
+}
+
+.more-btn {
+  padding: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fe2c55;
+  cursor: pointer;
+}

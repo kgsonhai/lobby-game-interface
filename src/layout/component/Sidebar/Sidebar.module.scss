@@ -1,0 +1,55 @@
+.wrapper {
+  width: 356px;
+  padding: 20px 0 26px 8px;
+  margin-left: -18px;
+
+  @media (max-width: 768px) {
+    max-width: 200px;
+  }
+
+  @media (max-width: 576px) {
+    position: fixed;
+    left: 0;
+    top: var(--default-layout-header-height);
+    max-width: 60px;
+    height: 100%;
+    margin-left: 0;
+    background-color: aliceblue;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+
+    .wrapper-menu {
+      display: none;
+    }
+
+    &.show {
+      max-width: 300px;
+
+      .wrapper-menu {
+        display: block;
+        animation: 0.5s fadeIn;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.btn-toggle {
+  display: none;
+
+  @media (max-width: 576px) {
+    margin-left: 10px;
+    margin-bottom: 15px;
+    display: block;
+  }
+}
+
+@keyframes fadeIn {
+  30% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
